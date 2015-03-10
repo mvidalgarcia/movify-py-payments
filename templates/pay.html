@@ -1,0 +1,23 @@
+<!doctype html>
+<title>TPV Cajastur</title>
+<h1>Complete purchase</h1>
+<form action="http://tpv.ceca.es:8000/cgi-bin/tpv" method=post>
+    <dl>
+        {{error}}
+        <dd><input type="hidden" name="MerchantID" value="{{ commerce_data.MERCHANT_ID }}"/>
+        <dd><input type="hidden" name="AcquirerBIN" value="{{ commerce_data.ACQUIRER_BIN }}"/>
+        <dd><input type="hidden" name="TerminalID" value="{{ commerce_data.TERMINAL_ID }}"/>
+        <dd><input type="hidden" name="Num_operacion" value="{{ numeroOperacion }}"/>
+        <dd><input type="hidden" name="Importe" value="{{ importe }}"/>
+        <dd><input type="hidden" name="TipoMoneda" value="{{ commerce_data.TIPO_MONEDA }}"/>
+        <dd><input type="hidden" name="Exponente" value="{{ commerce_data.EXPONENTE }}"/>
+        <dd><input type="hidden" name="URL_OK" value="{{ commerce_data.URL_OK }}" />
+        <dd><input type="hidden" name="URL_NOK" value="{{ commerce_data.URL_ERROR }}" />
+        <dd><input type="hidden" name="Firma" value="{{ firma }}"/>
+        <dd><input type="hidden" name="Idioma" value="1" />
+        <dd><input type="hidden" name="Pago_soportado" value="SSL" />
+        <dd><input type="hidden" name="Descripcion" value="" />
+        <dd><input type="hidden" name="Cifrado" value="SHA1" />
+        <dd><input type=submit value=Buy!>
+    </dl>
+</form>
