@@ -37,9 +37,9 @@ def paypal_payment(price, quantity, name, description, sku, return_url, cancel_u
                                     "price": price,
                                     "sku": sku,
                                     "currency": "EUR"
-                        }
-                    ]
-                }
+                                }
+                            ]
+                    }
                 }
             ]
     })
