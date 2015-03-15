@@ -1,2 +1,2 @@
-# movify-py-tpv
-TPV Cajastur (CECA) and PayPal Account Payment for python.
+# movify-py-payments
+TPV Cajastur (CECA), PayPal Account and Bitcoin Payment for python 3.4.
