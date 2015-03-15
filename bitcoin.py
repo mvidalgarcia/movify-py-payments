@@ -1,6 +1,7 @@
 __author__ = 'mvidalgarcia'
 
-import requests, json
+import requests
+import json
 
 
 def bitcoin_payment(return_url, notify_url, notify_email, price, customer_name, order_number, customer_email):
